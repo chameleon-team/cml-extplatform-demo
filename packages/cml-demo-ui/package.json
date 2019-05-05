@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cml-ui": "^0.2.0-mvvm.0"
+    "cml-ui": "^0.2.0-mvvm.1"
   }
 }

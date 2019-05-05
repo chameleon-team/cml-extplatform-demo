@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "chameleon-css-loader": "0.4.0-mvvm.5",
-    "chameleon-tool-utils": "0.4.0-mvvm.5",
+    "chameleon-css-loader": "0.4.0-mvvm.6",
+    "chameleon-tool-utils": "0.4.0-mvvm.6",
     "loader-utils": "^1.2.3",
-    "mvvm-babel-generator": "0.4.0-mvvm.5",
-    "mvvm-template-parser": "0.4.0-mvvm.5",
+    "mvvm-babel-generator": "0.4.0-mvvm.6",
+    "mvvm-template-parser": "0.4.0-mvvm.6",
     "postcss": "^7.0.14"
   },
   "scripts": {
