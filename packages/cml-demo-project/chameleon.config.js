@@ -24,10 +24,12 @@ cml.config.merge({
     wxAppId: '123456'
   },
   demo: {
-    dev: {},
+    dev: {
+      minimize: true,
+    },
     build: {
       minimize: true,
-      hash: true
+      hash: false
     }
   },
   wx: {
