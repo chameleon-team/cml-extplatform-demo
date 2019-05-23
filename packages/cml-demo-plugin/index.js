@@ -10,8 +10,8 @@ module.exports = class DemoPlugin {
     this.moduleRules = []; // 文件后缀对应的节点moduleType  
     this.logLevel = 3;
     this.originComponentExtList = ['.wxml']; // 用于扩展原生组件的文件后缀查找
-    this.runtimeNpmName = 'cml-demo-runtime';
-    this.runtimeNeedComponents = false; 
+    this.runtimeNpmName = 'cml-demo-runtime'; // 指定当前端的运行时库
+    this.builtinUINpmName = 'cml-demo-ui-builtin'; // 指定当前端的内置组件库
     this.cmlType = cmlType;
     this.media = media;
     this.miniappExt = {  // 小程序原生组件处理
@@ -42,7 +42,7 @@ register(compiler) {
      * nodeType 节点的nodeType
      */
     compiler.hook('compile-preCML', function(currentNode, nodeType) {
-      
+        console.log(currentNode.extra)
     })
     /**
      * cml节点编译后
@@ -104,6 +104,20 @@ register(compiler) {
      */
     compiler.hook('compile-other', function(currentNode) {
 
+    })
+
+     /**
+     * 编译other类型节点
+     * currentNode 当前节点
+     */
+    compiler.hook('config-json', function(jsonObj) {
+      console.log(JSON.stringify(jsonObj));
+      for(let item of jsonObj) {
+        item.demo = {
+          'appId': 'demoAppId',
+          'path': item.wx.path
+        }
+      }
     })
 
 

@@ -1,6 +1,8 @@
 <template>
   <view class="demo-com">
     <text class="title">demo-com</text>
+        <cml-com></cml-com>
+
   </view>
 </template>
 
@@ -33,6 +35,7 @@ export default new DemoCom();
 {
   "base": {
     "usingComponents": {
+      "cml-com": "../cml-com/cml-com"
     }
   }
 }

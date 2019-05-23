@@ -8,9 +8,9 @@ const path = require('path');
 cml.config.merge({
   templateLang: "cml",
   templateType: "html",
-  builtinNpmName: 'cml-demo-ui-builtin',
+  // builtinNpmName: 'cml-demo-ui-builtin',
   extPlatform: {
-    demo: 'cml-demo-plugin',
+    demo: 'cml-demo-plugin'
   },
   babelPath: [
     path.join(__dirname,'node_modules/cml-demo-ui-builtin'),
@@ -19,7 +19,7 @@ cml.config.merge({
     path.join(__dirname,'node_modules/cml-demo-ui'),
     path.join(__dirname,'node_modules/cml-demo-store'),
   ],
-  platforms: ["web","weex","wx","alipay","baidu"],
+  platforms: ["web",'demo','wx','weex'],
   buildInfo: {
     wxAppId: '123456'
   },

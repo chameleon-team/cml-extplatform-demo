@@ -2,6 +2,7 @@
 <include src="chameleon-api/src/interfaces/alert/index.interface"></include>
 
 // 扩展实现新端
+
 <script cml-type="demo">
 class Method implements uiInterface {
   alert(opt, successCallBack, failCallBack) {
