@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "node 'convert.js'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,18 @@
   },
   "homepage": "https://github.com/yylgit/cml-extplatform-demo#readme",
   "devDependencies": {
-    "lerna": "^3.5.1"
+    "chalk": "^2.4.2",
+    "cml-tt-api": "^0.2.3",
+    "cml-tt-plugin": "^0.2.3",
+    "cml-tt-runtime": "^0.2.3",
+    "cml-tt-store": "^0.2.3",
+    "cml-tt-ui": "0.2.2",
+    "cml-tt-ui-builtin": "0.2.2",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "inquirer": "^7.0.0",
+    "lerna": "^3.5.1",
+    "ora": "^3.4.0",
+    "shelljs": "^0.8.3"
   }
 }
